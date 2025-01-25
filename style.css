@@ -988,6 +988,10 @@ body {
         font-size: 18px;
     }
 
+    #descr-a-propos, #competence-a-propos, #xp-a-propos, #point-a-propos {
+        margin-bottom: 60px;
+    }
+
     #competence-a-propos h4 {
         color: var(--rose);
     }
@@ -1003,7 +1007,7 @@ body {
     }
 
     #xp-a-propos {
-        margin: 0 30px;
+        margin: 0 30px 60px 30px;
     }
 
     #xp-a-propos p {
