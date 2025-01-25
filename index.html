@@ -81,13 +81,16 @@
 
                         <h2>à propos</h2>
                         <div id="photo-a-propos"></div>
-                        <p id="p-a-propos">Développeuse web en formation, je me spécialise dans la création de solutions
-                            numériques
-                            interactives
-                            et performantes. Avec une expertise en développement front-end et une approche axée sur
-                            l'innovation, je suis à la recherche d'un stage à partir d’avril pour contribuer à des
-                            projets
-                            ambitieux et renforcer mes compétences.</p>
+                        <p id="p-a-propos">Mes années de formation m'ont permis de développer des compétences en
+                            développement web avec les langages PHP, HTML, CSS et JavaScript. Ces langages me permettent
+                            de créer des sites web responsives et interactifs, offrant une expérience utilisateur
+                            pertinente.
+
+                            Je possède également des compétences en création numérique, que j'ai pu renforcer notamment
+                            lors d'une année d'alternance en tant que graphiste. Grâce aux outils de la suite Creative
+                            Cloud, je suis en mesure de concevoir divers supports de communication adaptés à la cible.
+
+                        </p>
                         <div id="cv-a-propos">
                             <h3>Mon cv</h3>
                             <div id="container-button">
@@ -468,36 +471,185 @@
         </header>
         <div id="overlay" class="hidden"></div>
         <section id="home">
-                <h1>Emmanuelle NSOSSANI</h1>
-                <p id="dev">Développeuse web</p>
-                <div id="container-photo">
-                    <img src="images/moi.png" alt="illustration-emmanuelle-nsossani">
+            <h1>Emmanuelle NSOSSANI</h1>
+            <p id="dev">Développeuse web</p>
+            <div id="container-photo">
+                <img src="images/moi.png" alt="illustration-emmanuelle-nsossani">
+            </div>
+            <p id="description">Actuellement en deuxième année de BUT Métiers du Multimédia et de l’Internet
+                à
+                l’IUT de Bobigny, parcours Développement Web et Dispositifs Interactifs, je suis à la
+                recherche
+                d’un stage en front-end ou back-end de 3 mois à partir du 7 avril.</p>
+            <button class="button" onclick="window.location.href = '#contact';">
+                <div class="original">Me contacter</div>
+                <div class="letters">
+                    <span>M</span>
+                    <span>e</span>
+                    <span>&nbsp;</span>
+                    <span>c</span>
+                    <span>o</span>
+                    <span>n</span>
+                    <span>t</span>
+                    <span>a</span>
+                    <span>c</span>
+                    <span>t</span>
+                    <span>e</span>
+                    <span>r</span>
                 </div>
-                <p id="description">Actuellement en deuxième année de BUT Métiers du Multimédia et de l’Internet
-                    à
-                    l’IUT de Bobigny, parcours Développement Web et Dispositifs Interactifs, je suis à la
-                    recherche
-                    d’un stage en front-end ou back-end de 3 mois à partir du 7 avril.</p>
-                <button class="button" onclick="window.location.href = '#contact';">
-                    <div class="original">Me contacter</div>
-                    <div class="letters">
-                        <span>M</span>
-                        <span>e</span>
-                        <span>&nbsp;</span>
-                        <span>c</span>
-                        <span>o</span>
-                        <span>n</span>
-                        <span>t</span>
-                        <span>a</span>
-                        <span>c</span>
-                        <span>t</span>
-                        <span>e</span>
-                        <span>r</span>
+            </button>
+        </section>
+        <section id="a-propos">
+            <h2>à propos</h2>
+            <div id="photo-a-propos"></div>
+            <p id="p-a-propos">Mes années de formation m'ont permis de développer des compétences en
+                développement web avec les langages PHP, HTML, CSS et JavaScript. Ces langages me permettent
+                de créer des sites web responsives et interactifs, offrant une expérience utilisateur
+                pertinente.
+            </p>
+            <button class="button" onclick="downloadCV()">
+                <div class="original">Télécharger mon cv</div>
+                <div class="letters">
+                    <span>T</span>
+                    <span>é</span>
+                    <span>L</span>
+                    <span>é</span>
+                    <span>C</span>
+                    <span>H</span>
+                    <span>A</span>
+                    <span>R</span>
+                    <span>G</span>
+                    <span>E</span>
+                    <span>R</span>
+                    <span>&nbsp;</span>
+                    <span>M</span>
+                    <span>O</span>
+                    <span>N</span>
+                    <span>&nbsp;</span>
+                    <span>C</span>
+                    <span>V</span>
+                </div>
+            </button>
+            <div id="a-propos-droite">
+                <div id="competence-a-propos">
+                    <h3>Mes compétences</h3>
+
+                    <div id="container-competence">
+                        <div>
+                            <h4>Développement</h4>
+                            <p class="sous-titre">PHP | HTML | JS | CSS</p>
+                            <p>Grâce aux différents langages de développement, je peux créer des sites web
+                                responsives, interactifs et optimisés, offrant une expérience utilisateur fluide
+                                sur
+                                tous les appareils.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4>Base de donnée</h4>
+                            <p class="sous-titre">SQLite | MySQL | Json</p>
+                            <p>Je peux créer des bases de données avec différents SGBD tels que PHPMyAdmin et
+                                MariaDB. Cela me permet de développer des sites plus riches en informations,
+                                d'offrir des fonctionnalités dynamiques comme la gestion de comptes, la
+                                personnalisation des contenus ou le stockage sécurisé des données, tout en
+                                facilitant une interaction fluide et efficace avec les utilisateurs.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4>Librairies</h4>
+                            <p class="sous-titre">D3.js | GSAP JS | Three.js | GD (php)</p>
+                            <p>Avec l'utilisation de ces librairies, je peux créer des visualisations de données
+                                interactives, des animations fluides, des expériences 3D immersives et des
+                                images
+                                générées dynamiquement, tout en optimisant les performances et l'interactivité
+                                des
+                                sites web.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4>CMS</h4>
+                            <p class="sous-titre">Wordpress</p>
+                            <p>Grâce à WordPress, je peux créer facilement et rapidement des sites web en
+                                utilisant
+                                des templates et des thèmes existants. Je suis également capable de concevoir
+                                mon
+                                propre thème, ce qui me permet d'avoir une flexibilité totale et de
+                                personnaliser le
+                                site selon les besoins spécifiques du projet.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4>Outils</h4>
+                            <p class="sous-titre">VSCode | Github | Axure | Figma | FlutterFlow | Notion</p>
+                            <p>Grâce à des outils comme VS Code, GitHub, Axure, Figma, FlutterFlow et Notion, je
+                                peux développer, prototyper, concevoir des interfaces, créer des applications
+                                multiplateformes et organiser efficacement mes projets pour garantir un workflow
+                                fluide et productif.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4>Programmation</h4>
+                            <p class="sous-titre">Python</p>
+                            <p>J'ai acquis les bases en Python grâce à ma spécilité Numérique et Sciences
+                                Informatique suivi au lycée. J'ai par la suite participé à un prjet de
+                                conception
+                                d'une application qui m'a permis de les consolider même s'il me reste du chemin
+                                à
+                                parcourir.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4>Créations numériques</h4>
+                            <p class="sous-titre">Illustrator | Photoshop | Premiere Pro | Indesign | Animate |
+                                Maya
+                                | After Effect | Davinci</p>
+                            <p>Malgré mon profil de développeuse, je sais également créer des supports de
+                                communication créatifs et adaptés à la cible, alliant esthétique et efficacité
+                                pour
+                                transmettre des messages percutants.
+                            </p>
+                        </div>
                     </div>
-                </button>
+                </div>
+                <div id="xp-a-propos">
+                    <h3>Mes expériences</h3>
+                    <div id="container-xp">
+                        <div>
+                            <h4>Graphiste - 2023/2024</h4>
+                            <p class="sous-titre">En alternance à la mairie de Villiers-sur-Marne</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, sit! Impedit
+                                voluptas natus beatae minima eveniet. Labore praesentium necessitatibus fugiat
+                                exercitationem, ipsam ut, doloremque, ex hic numquam doloribus voluptatibus
+                                iusto?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="point-a-propos">
+                    <h3>Points forts</h3>
+                    <div id="container-point">
+                        <div>
+                            <h4>(01) Polyvalence</h4>
+                        </div>
+                        <div>
+                            <h4>(02) Proactivité</h4>
+                        </div>
+                        <div>
+                            <h4>(03) Autonome</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
+
+
+
 
     </section>
     <script type="module" src="js/projets.js"></script>
