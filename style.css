@@ -951,5 +951,30 @@ body {
         border-radius: 50px;
     }
 
-
+    #carousel-competence {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      
+      .carousel-cell {
+        width: 70%; /* Ajuste selon ton design */
+        height: 400px; /* Définit une hauteur fixe */
+        margin-right: 10px; /* Ajoute de l'espace entre les slides */
+        background-color: #8c8; /* Style basique */
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+        transition: transform 0.3s ease-in-out; /* Transition fluide */
+      }
+      
+      .carousel-cell:hover {
+        transform: scale(1.05); /* Zoom léger */
+      }
+      
+      .sous-titre {
+        font-style: italic;
+        color: #333;
+        margin-bottom: 10px;
+      }
 }

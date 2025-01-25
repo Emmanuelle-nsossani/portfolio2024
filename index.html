@@ -16,6 +16,8 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <title>Emmanuelle Nsossani | Portfolio</title>
 </head>
 
@@ -534,8 +536,23 @@
                 <div id="competence-a-propos">
                     <h3>Mes compétences</h3>
 
-                    <div id="container-competence">
-                        <div>
+                    <div id="carousel-competence" class="carousel" data-flickity='{ 
+                        "wrapAround": false, 
+                        "cellAlign": "center", 
+                        "pageDots": true 
+                      }'>
+                        <div class="competence carousel-cell">
+                            <h4>Créations numériques</h4>
+                            <p class="sous-titre">Illustrator | Photoshop | Premiere Pro | Indesign | Animate |
+                                Maya
+                                | After Effect | Davinci</p>
+                            <p>Malgré mon profil de développeuse, je sais également créer des supports de
+                                communication créatifs et adaptés à la cible, alliant esthétique et efficacité
+                                pour
+                                transmettre des messages percutants.
+                            </p>
+                        </div>
+                        <div class="competence carousel-cell">
                             <h4>Développement</h4>
                             <p class="sous-titre">PHP | HTML | JS | CSS</p>
                             <p>Grâce aux différents langages de développement, je peux créer des sites web
@@ -545,7 +562,7 @@
                             </p>
                         </div>
 
-                        <div>
+                        <div class="competence carousel-cell">
                             <h4>Base de donnée</h4>
                             <p class="sous-titre">SQLite | MySQL | Json</p>
                             <p>Je peux créer des bases de données avec différents SGBD tels que PHPMyAdmin et
@@ -556,7 +573,7 @@
                             </p>
                         </div>
 
-                        <div>
+                        <div class="competence carousel-cell">
                             <h4>Librairies</h4>
                             <p class="sous-titre">D3.js | GSAP JS | Three.js | GD (php)</p>
                             <p>Avec l'utilisation de ces librairies, je peux créer des visualisations de données
@@ -568,7 +585,7 @@
                             </p>
                         </div>
 
-                        <div>
+                        <div class="competence carousel-cell">
                             <h4>CMS</h4>
                             <p class="sous-titre">Wordpress</p>
                             <p>Grâce à WordPress, je peux créer facilement et rapidement des sites web en
@@ -581,7 +598,7 @@
                             </p>
                         </div>
 
-                        <div>
+                        <div class="competence carousel-cell">
                             <h4>Outils</h4>
                             <p class="sous-titre">VSCode | Github | Axure | Figma | FlutterFlow | Notion</p>
                             <p>Grâce à des outils comme VS Code, GitHub, Axure, Figma, FlutterFlow et Notion, je
@@ -591,7 +608,7 @@
                             </p>
                         </div>
 
-                        <div>
+                        <div class="competence carousel-cell">
                             <h4>Programmation</h4>
                             <p class="sous-titre">Python</p>
                             <p>J'ai acquis les bases en Python grâce à ma spécilité Numérique et Sciences
@@ -602,8 +619,7 @@
                                 parcourir.
                             </p>
                         </div>
-
-                        <div>
+                        <div class="competence carousel-cell">
                             <h4>Créations numériques</h4>
                             <p class="sous-titre">Illustrator | Photoshop | Premiere Pro | Indesign | Animate |
                                 Maya
@@ -612,6 +628,15 @@
                                 communication créatifs et adaptés à la cible, alliant esthétique et efficacité
                                 pour
                                 transmettre des messages percutants.
+                            </p>
+                        </div>
+                        <div class="competence carousel-cell">
+                            <h4>Développement</h4>
+                            <p class="sous-titre">PHP | HTML | JS | CSS</p>
+                            <p>Grâce aux différents langages de développement, je peux créer des sites web
+                                responsives, interactifs et optimisés, offrant une expérience utilisateur fluide
+                                sur
+                                tous les appareils.
                             </p>
                         </div>
                     </div>
@@ -666,6 +691,23 @@
         function openCV() {
             window.open('images/cv_Emmanuelle_Nsossani.pdf', '_blank');
         }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var flkty = new Flickity("#carousel-competence", {
+                wrapAround: false,
+                cellAlign: "center",
+                pageDots: true
+            });
+
+            flkty.on("select", function () {
+                if (flkty.selectedIndex === 0) {
+                    flkty.select(flkty.cells.length - 2, false, true);
+                } else if (flkty.selectedIndex === flkty.cells.length - 1) {
+                    flkty.select(1, false, true);
+                }
+            });
+        });
+
     </script>
 </body>
 
