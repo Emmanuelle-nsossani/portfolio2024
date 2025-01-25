@@ -984,9 +984,12 @@ body {
         /* Zoom léger */
     }
 
-    #carousel-competence h4 {
+    #a-propos h4 {
+        font-size: 18px;
+    }
+
+    #competence-a-propos h4 {
         color: var(--rose);
-        font-size: 20px;
     }
 
     .sous-titre {
@@ -997,5 +1000,21 @@ body {
 
     #carousel-competence p {
         font-size: 18px;
+    }
+
+    #xp-a-propos {
+        margin: 0 30px;
+    }
+
+    #xp-a-propos p {
+        font-size: 16px;
+    }
+
+    .justify {
+        text-align: justify;
+    }
+
+    #point-a-propos {
+        text-align: center;
     }
 }
