@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="Portfolio développement web">
+    <meta name="keywords"
+        content="Développement Web, Web Développement, front-end, full-stack, UI Design, Portfolio, MMI, Métiers du Multimédia et de l'Internet, BUT MMI, NSOSSANI, ,NSOSSANI Emmmanuelle, Emmanuelle, Portfolio professionnel, Porfolio pro,code créa,site web">
+    <meta name="author" content="NSOSSANI Emmanuelle Amour">
+    <meta name="keywords" content="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Emmanuelle Nsossani | Portfolio</title>
+</head>
+
+<body>
+    <div id="loading-screen">
+        <div id="percentage">0%</div>
+    </div>
+    <div id="desktop">
+        <header>
+            <ul id="menu" class="hidden">
+                <li class="items-menu"><a href="#a-propos">à propos</a></li>
+                <li class="items-menu"><a href="#projet">projets</a></li>
+                <li class="items-menu"><a href="#contact">Me contacter</a></li>
+            </ul>
+            <div class="header-slide">
+                <a id="home-link" href="#home"><img src="images/bouton-daccueil-pour-linterface.png" alt=""></a>
+                <div id="menu-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div></div>
+            </div>
+        </header>
+        <div id="overlay" class="hidden"></div>
+        <div class="outer-wrapper">
+            <div class="wrapper">
+                <section class="slide" id="home">
+                    <div id="intro">
+                        <h1>Emmanuelle NSOSSANI</h1>
+                        <p id="dev">Développeuse web</p>
+                        <p id="description">Actuellement en deuxième année de BUT Métiers du Multimédia et de l’Internet
+                            à
+                            l’IUT de Bobigny, parcours Développement Web et Dispositifs Interactifs, je suis à la
+                            recherche
+                            d’un stage en front-end ou back-end de 3 mois à partir du 7 avril.</p>
+                        <button class="button" onclick="window.location.href = '#contact';">
+                            <div class="original">Me contacter</div>
+                            <div class="letters">
+                                <span>M</span>
+                                <span>e</span>
+                                <span>&nbsp;</span>
+                                <span>c</span>
+                                <span>o</span>
+                                <span>n</span>
+                                <span>t</span>
+                                <span>a</span>
+                                <span>c</span>
+                                <span>t</span>
+                                <span>e</span>
+                                <span>r</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div id="container-photo">
+                        <img src="images/moi.png" alt="">
+                        <p id="scroll-link"><a href="#a-propos">Scrollez ou glisser avec votre souris</a><img
+                                src="images/arrow.svg" alt=""></p>
+                    </div>
+                </section>
+                <section class="slide" id="a-propos">
+                    <div id="a-propos-gauche">
+
+                        <h2>à propos</h2>
+                        <div id="photo-a-propos"></div>
+                        <p id="p-a-propos">Développeuse web en formation, je me spécialise dans la création de solutions
+                            numériques
+                            interactives
+                            et performantes. Avec une expertise en développement front-end et une approche axée sur
+                            l'innovation, je suis à la recherche d'un stage à partir d’avril pour contribuer à des
+                            projets
+                            ambitieux et renforcer mes compétences.</p>
+                        <div id="cv-a-propos">
+                            <h3>Mon cv</h3>
+                            <div id="container-button">
+                                <button class="button" onclick="openCV()">
+                                    <div class="original">Ouvrir mon cv</div>
+                                    <div class="letters">
+                                        <span>O</span>
+                                        <span>U</span>
+                                        <span>V</span>
+                                        <span>R</span>
+                                        <span>I</span>
+                                        <span>R</span>
+                                        <span>&nbsp;</span>
+                                        <span>M</span>
+                                        <span>O</span>
+                                        <span>N</span>
+                                        <span>&nbsp;</span>
+                                        <span>C</span>
+                                        <span>V</span>
+                                    </div>
+                                </button>
+                                <button class="button" onclick="downloadCV()">
+                                    <div class="original">Télécharger mon cv</div>
+                                    <div class="letters">
+                                        <span>T</span>
+                                        <span>é</span>
+                                        <span>L</span>
+                                        <span>é</span>
+                                        <span>C</span>
+                                        <span>H</span>
+                                        <span>A</span>
+                                        <span>R</span>
+                                        <span>G</span>
+                                        <span>E</span>
+                                        <span>R</span>
+                                        <span>&nbsp;</span>
+                                        <span>M</span>
+                                        <span>O</span>
+                                        <span>N</span>
+                                        <span>&nbsp;</span>
+                                        <span>C</span>
+                                        <span>V</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="a-propos-droite">
+                        <div id="competence-a-propos">
+                            <h3>Mes compétences</h3>
+
+                            <div id="container-competence">
+                                <div>
+                                    <h4>Développement</h4>
+                                    <p class="sous-titre">PHP | HTML | JS | CSS</p>
+                                    <p>Grâce aux différents langages de développement, je peux créer des sites web
+                                        responsives, interactifs et optimisés, offrant une expérience utilisateur fluide
+                                        sur
+                                        tous les appareils.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h4>Base de donnée</h4>
+                                    <p class="sous-titre">SQLite | MySQL | Json</p>
+                                    <p>Je peux créer des bases de données avec différents SGBD tels que PHPMyAdmin et
+                                        MariaDB. Cela me permet de développer des sites plus riches en informations,
+                                        d'offrir des fonctionnalités dynamiques comme la gestion de comptes, la
+                                        personnalisation des contenus ou le stockage sécurisé des données, tout en
+                                        facilitant une interaction fluide et efficace avec les utilisateurs.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h4>Librairies</h4>
+                                    <p class="sous-titre">D3.js | GSAP JS | Three.js | GD (php)</p>
+                                    <p>Avec l'utilisation de ces librairies, je peux créer des visualisations de données
+                                        interactives, des animations fluides, des expériences 3D immersives et des
+                                        images
+                                        générées dynamiquement, tout en optimisant les performances et l'interactivité
+                                        des
+                                        sites web.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h4>CMS</h4>
+                                    <p class="sous-titre">Wordpress</p>
+                                    <p>Grâce à WordPress, je peux créer facilement et rapidement des sites web en
+                                        utilisant
+                                        des templates et des thèmes existants. Je suis également capable de concevoir
+                                        mon
+                                        propre thème, ce qui me permet d'avoir une flexibilité totale et de
+                                        personnaliser le
+                                        site selon les besoins spécifiques du projet.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h4>Outils</h4>
+                                    <p class="sous-titre">VSCode | Github | Axure | Figma | FlutterFlow | Notion</p>
+                                    <p>Grâce à des outils comme VS Code, GitHub, Axure, Figma, FlutterFlow et Notion, je
+                                        peux développer, prototyper, concevoir des interfaces, créer des applications
+                                        multiplateformes et organiser efficacement mes projets pour garantir un workflow
+                                        fluide et productif.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h4>Programmation</h4>
+                                    <p class="sous-titre">Python</p>
+                                    <p>J'ai acquis les bases en Python grâce à ma spécilité Numérique et Sciences
+                                        Informatique suivi au lycée. J'ai par la suite participé à un prjet de
+                                        conception
+                                        d'une application qui m'a permis de les consolider même s'il me reste du chemin
+                                        à
+                                        parcourir.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h4>Créations numériques</h4>
+                                    <p class="sous-titre">Illustrator | Photoshop | Premiere Pro | Indesign | Animate |
+                                        Maya
+                                        | After Effect | Davinci</p>
+                                    <p>Malgré mon profil de développeuse, je sais également créer des supports de
+                                        communication créatifs et adaptés à la cible, alliant esthétique et efficacité
+                                        pour
+                                        transmettre des messages percutants.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="xp-a-propos">
+                            <h3>Mes expériences</h3>
+                            <div id="container-xp">
+                                <div>
+                                    <h4>Graphiste - 2023/2024</h4>
+                                    <p class="sous-titre">En alternance à la mairie de Villiers-sur-Marne</p>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, sit! Impedit
+                                        voluptas natus beatae minima eveniet. Labore praesentium necessitatibus fugiat
+                                        exercitationem, ipsam ut, doloremque, ex hic numquam doloribus voluptatibus
+                                        iusto?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="point-a-propos">
+                            <h3>Points forts</h3>
+                            <div id="container-point">
+                                <div>
+                                    <h4>(01) Polyvalence</h4>
+                                </div>
+                                <div>
+                                    <h4>(02) Proactivité</h4>
+                                </div>
+                                <div>
+                                    <h4>(03) Autonome</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="slide" id="projet">
+                    <div class="wrapper-projet" id="wrapper-projet">
+                        <div class="slider-projet">
+                            <div class="slide-projet" id="dataviz">
+                                <img class="" src="images/captures/dataviz-square.png" alt="">
+                                <div class="container-text-projet">
+                                    <div>
+                                        <h3>#Développement</h3>
+                                    </div>
+                                    <div>
+                                        <h3>Le projet</h3>
+                                        <p>J'ai créé une dataviz avec D3.js pour afficher l'opinion des Français sur le
+                                            changement climatique. Le projet permet d'explorer des données sur les
+                                            préoccupations environnementales, les attitudes face aux politiques
+                                            écologiques
+                                            et la perception du changement climatique. Les utilisateurs peuvent
+                                            interagir
+                                            avec des graphiques et des cartes pour analyser les tendances selon l'âge,
+                                            la
+                                            région ou le niveau d'éducation. L'objectif était de rendre ces données plus
+                                            accessibles et compréhensibles.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h3>Langages</h3>
+                                        <p>HTML, CSS, JS</p>
+                                    </div>
+                                    <!-- <div>
+                                    <h3>Mon rôle</h3>
+                                    <p></p>
+                                </div> -->
+                                    <button class="button"
+                                        onclick="window.open('https://dataviz.emmanuellecode.fr/', '_blank');">
+                                        <!-- <a href="https://dataviz.emmanuellecode.fr/"> -->
+                                        <div class="original">Visiter le site</div>
+                                        <div class="letters">
+                                            <span>V</span>
+                                            <span>I</span>
+                                            <span>S</span>
+                                            <span>I</span>
+                                            <span>T</span>
+                                            <span>E</span>
+                                            <span>R</span>
+                                            <span>&nbsp;</span>
+                                            <span>L</span>
+                                            <span>E</span>
+                                            <span>&nbsp;</span>
+                                            <span>S</span>
+                                            <span>I</span>
+                                            <span>T</span>
+                                            <span>E</span>
+                                        </div>
+                                    </button>
+                                    <!-- </a> -->
+                                </div>
+                            </div>
+                            <div class="slide-projet" id="life">
+                                <img class="" src="images/captures/life-square.png" alt="">
+                                <div class="container-text-projet">
+                                    <div>
+                                        <h3>#Développement</h3>
+                                    </div>
+                                    <div>
+                                        <h3>Le projet</h3>
+                                        <p>Développement d'un site pour une association fictive qui lutte contre le
+                                            sexisme
+                                            dans le monde du travail
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h3>Langages</h3>
+                                        <p>PHP, HTML, CSS, JS</p>
+                                    </div>
+                                    <!-- <div>
+                                    <h3>Mon rôle</h3>
+                                    <p></p>
+                                </div> -->
+                                    <button class="button"
+                                        onclick="window.open('https://mmi-iutsf.org/2023/05_life/pageaccueil.php', '_blank');">
+                                        <div class="original">Visiter le site</div>
+                                        <div class="letters">
+                                            <span>V</span>
+                                            <span>I</span>
+                                            <span>S</span>
+                                            <span>I</span>
+                                            <span>T</span>
+                                            <span>E</span>
+                                            <span>R</span>
+                                            <span>&nbsp;</span>
+                                            <span>L</span>
+                                            <span>E</span>
+                                            <span>&nbsp;</span>
+                                            <span>S</span>
+                                            <span>I</span>
+                                            <span>T</span>
+                                            <span>E</span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slide-projet"></div>
+                            <div class="slide-projet"></div>
+                        </div>
+                        <div class="text" id="text">
+                            Projet 01 | Dataviz
+                        </div>
+                        <div class="nav" id="nav">
+                            <div class="nav-item active" id="navItem0">
+                                <span>01 Dataviz</span>
+                                <div class="nav-bar"></div>
+                            </div>
+                            <div class="nav-item" id="navItem1">
+                                <span>02 LIFE</span>
+                                <div class="nav-bar"></div>
+                            </div>
+                            <div class="nav-item" id="navItem2">
+                                <span>03 JRE</span>
+                                <div class="nav-bar"></div>
+                            </div>
+                            <div class="nav-item" id="navItem3">
+                                <span>04 BREAK</span>
+                                <div class="nav-bar"></div>
+                            </div>
+                        </div>
+                        <button class="button" id="next">
+                            <div class="original">next</div>
+                            <div class="letters">
+                                <span>n</span>
+                                <span>e</span>
+                                <span>x</span>
+                                <span>t</span>
+                            </div>
+                        </button>
+                    </div>
+                </section>
+                <section class="slide" id="contact">
+                    <h2>Me contacter</h2>
+                    <div id="container-flex-contact">
+                        <div id="gauche-contact">
+                            <img id="illustration-contact" src="images/contact.png" alt="contact">
+                            <div id="container-link-contact">
+                                <a class="link-contact" href="https://www.linkedin.com/in/ensossani/">
+                                    <p>Linkedin</p>
+                                    <img src="images/arrow-link.svg" alt="">
+                                </a>
+                                <a class="link-contact" href="mailto:emmanuelle.nsossani@outlook.com">
+                                    <p>Mail</p>
+                                    <img src="images/arrow-link.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div id="droite-contact">
+                            <p>N'hésitez pas à me contacter pour toutes demandes d'informations complémentaire !
+                            </p>
+                            <form action="">
+                                <div class="form-div">
+                                    <label for="email">Entrer votre adresse mail</label>
+                                    <input type="email" name="email" id="email" placeholder="recruteur@pro.fr"
+                                        required />
+                                </div>
+                                <div class="form-div">
+                                    <label for="objet">L'objet de votre message</label>
+                                    <input type="text" name="objet" id="objet" placeholder="Entretien" required />
+                                </div>
+                                <div class="form-div">
+                                    <label for="text-form">Votre message</label>
+                                    <textarea type="text" name="text-form" id="text-form"
+                                        placeholder="Je vous veux dans mon équipe !" required></textarea>
+                                </div>
+                                <div class="form-div">
+                                    <button class="button" type="submit">
+                                        <div class="original">Envoyer !</div>
+                                        <div class="letters">
+                                            <span>E</span>
+                                            <span>N</span>
+                                            <span>V</span>
+                                            <span>O</span>
+                                            <span>Y</span>
+                                            <span>E</span>
+                                            <span>R</span>
+                                            <span>&nbsp;</span>
+                                            <span>!</span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- <section class="slide" id="bonus">
+
+            </section> -->
+            </div>
+        </div>
+
+    </div>
+    <div id="mobile">
+        <header>
+            <ul id="menu" class="hidden">
+                <li class="items-menu"><a href="#a-propos">à propos</a></li>
+                <li class="items-menu"><a href="#projet">projets</a></li>
+                <li class="items-menu"><a href="#contact">Me contacter</a></li>
+            </ul>
+            <div class="header-slide">
+                <a id="home-link" href="#home"><img src="images/bouton-daccueil-pour-linterface.png" alt=""></a>
+                <div id="menu-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div></div>
+            </div>
+        </header>
+        <div id="overlay" class="hidden"></div>
+        <section id="home">
+                <h1>Emmanuelle NSOSSANI</h1>
+                <p id="dev">Développeuse web</p>
+                <div id="container-photo">
+                    <img src="images/moi.png" alt="illustration-emmanuelle-nsossani">
+                </div>
+                <p id="description">Actuellement en deuxième année de BUT Métiers du Multimédia et de l’Internet
+                    à
+                    l’IUT de Bobigny, parcours Développement Web et Dispositifs Interactifs, je suis à la
+                    recherche
+                    d’un stage en front-end ou back-end de 3 mois à partir du 7 avril.</p>
+                <button class="button" onclick="window.location.href = '#contact';">
+                    <div class="original">Me contacter</div>
+                    <div class="letters">
+                        <span>M</span>
+                        <span>e</span>
+                        <span>&nbsp;</span>
+                        <span>c</span>
+                        <span>o</span>
+                        <span>n</span>
+                        <span>t</span>
+                        <span>a</span>
+                        <span>c</span>
+                        <span>t</span>
+                        <span>e</span>
+                        <span>r</span>
+                    </div>
+                </button>
+            </div>
+        </section>
+    </div>
+
+    </section>
+    <script type="module" src="js/projets.js"></script>
+    <script type="module" src="js/header.js"></script>
+    <script type="module" src="js/loading.js"></script>
+    <script>
+        function downloadCV() {
+            const link = document.createElement('a');
+            link.href = 'images/cv_Emmanuelle_Nsossani.pdf'; // Chemin de ton fichier
+            link.download = 'cv_Emmanuelle_Nsossani.pdf'; // Nom du fichier
+            link.click();
+        }
+
+        function openCV() {
+            window.open('images/cv_Emmanuelle_Nsossani.pdf', '_blank');
+        }
+    </script>
+</body>
+
+</html>
