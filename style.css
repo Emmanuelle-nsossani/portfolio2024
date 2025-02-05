@@ -842,6 +842,12 @@ body {
         text-align: center;
     }
 
+    h3 {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
     p {
         font-size: 20px;
     }
@@ -929,15 +935,19 @@ body {
     /* A PROPOS  */
 
     #a-propos {
-        margin: 30px 30px;
+        margin: 30px 0;
     }
 
     #a-propos h2 {
         margin-bottom: 20px;
     }
-    
+
     #a-propos button {
         margin: 20px auto
+    }
+
+    #descr-a-propos {
+        margin: 0 30px;
     }
 
     #photo-a-propos {
@@ -951,5 +961,64 @@ body {
         border-radius: 50px;
     }
 
+    #carousel-competence {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+    }
 
+    .carousel-cell {
+        width: 70%;
+        height: 410px;
+        margin-right: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        border: 3px solid var(--rose);
+        padding: 10px;
+    }
+
+    .carousel-cell:hover {
+        transform: scale(1.05);
+        /* Zoom léger */
+    }
+
+    #a-propos h4 {
+        font-size: 18px;
+    }
+
+    #descr-a-propos, #competence-a-propos, #xp-a-propos, #point-a-propos {
+        margin-bottom: 60px;
+    }
+
+    #competence-a-propos h4 {
+        color: var(--rose);
+    }
+
+    .sous-titre {
+        color: var(--noir);
+        opacity: 0.7;
+        margin-bottom: 10px;
+    }
+
+    #carousel-competence p {
+        font-size: 18px;
+    }
+
+    #xp-a-propos {
+        margin: 0 30px 60px 30px;
+    }
+
+    #xp-a-propos p {
+        font-size: 16px;
+    }
+
+    .justify {
+        text-align: justify;
+    }
+
+    #point-a-propos {
+        text-align: center;
+    }
 }
