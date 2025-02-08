@@ -830,6 +830,11 @@ body {
         box-sizing: border-box;
     }
 
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
     h1 {
         margin-top: 50px;
         font-size: 40px;
@@ -988,7 +993,10 @@ body {
         font-size: 18px;
     }
 
-    #descr-a-propos, #competence-a-propos, #xp-a-propos, #point-a-propos {
+    #descr-a-propos,
+    #competence-a-propos,
+    #xp-a-propos,
+    #point-a-propos {
         margin-bottom: 60px;
     }
 
@@ -1020,5 +1028,35 @@ body {
 
     #point-a-propos {
         text-align: center;
+    }
+
+    /* PROJETS */
+
+    #container-projets {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .projet {
+        margin: 0 30px;
+        /* border: 1px solid red; */
+        height: 150px;
+
+        background-position: center;
+        background-size: cover;
+    }
+
+    .projet a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #00000066;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
     }
 }
