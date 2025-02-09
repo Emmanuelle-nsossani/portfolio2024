@@ -333,7 +333,7 @@ body {
     .outer-wrapper {
         padding-top: 7vw;
         width: 100vh;
-        height: 100vw;
+        height: 93vw;
         transform: rotate(-90deg) translateX(-100vh);
         transform-origin: top left;
         overflow-y: scroll;
