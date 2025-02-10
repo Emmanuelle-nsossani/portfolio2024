@@ -31,9 +31,9 @@
 </head>
 
 <body>
-    <!-- <div id="loading-screen">
+    <div id="loading-screen">
         <div id="percentage">0%</div>
-    </div> -->
+    </div>
     <div id="desktop">
         <header>
             <ul id="menu" class="hidden">
@@ -421,7 +421,7 @@
                         <div id="droite-contact">
                             <p>N'hésitez pas à me contacter pour toutes demandes d'informations complémentaire !
                             </p>
-                            <form action="">
+                            <form id="myForm" onsubmit="sendEmail(event)">
                                 <div class="form-div">
                                     <label for="email">Entrer votre adresse mail</label>
                                     <input type="email" name="email" id="email" placeholder="recruteur@pro.fr"
@@ -429,22 +429,14 @@
                                 </div>
                                 <div class="form-div">
                                     <label for="text-form">Votre message</label>
-                                    <textarea type="text" name="text-form" id="text-form"
-                                        placeholder="Je vous veux dans mon équipe !" required></textarea>
+                                    <textarea name="message" id="text-form" placeholder="Je vous veux dans mon équipe !"
+                                        required></textarea>
                                 </div>
                                 <div class="form-div">
                                     <button class="button" type="submit">
                                         <div class="original">Envoyer !</div>
                                         <div class="letters">
-                                            <span>E</span>
-                                            <span>N</span>
-                                            <span>V</span>
-                                            <span>O</span>
-                                            <span>Y</span>
-                                            <span>E</span>
-                                            <span>R</span>
-                                            <span>&nbsp;</span>
-                                            <span>!</span>
+                                            <span>E</span><span>N</span><span>V</span><span>O</span><span>Y</span><span>E</span><span>R</span><span>&nbsp;</span><span>!</span>
                                         </div>
                                     </button>
                                 </div>
@@ -729,6 +721,39 @@
             });
         });
 
+    </script>
+    <!-- MESSAGERIE -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        // Initialisation d'EmailJS
+        emailjs.init({
+            publicKey: 'Pz2wBUr76NIfj0GkL',
+            blockHeadless: true,
+            blockList: {
+                list: ['emmanuelle.nsossani@outlook.com'],
+                watchVariable: 'userEmail',
+            },
+            limitRate: {
+                id: 'app',
+                throttle: 10000,
+            },
+        });
+
+        // Fonction pour envoyer l'email lors de la soumission du formulaire
+        function sendEmail(event) {
+            event.preventDefault(); // Empêche le rechargement de la page
+
+            emailjs.sendForm('service_3r2ufq3', 'template_pwsv5nv', '#myForm')
+                .then((response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('E-mail envoyé avec succès !');
+                    document.getElementById('myForm').reset(); // Réinitialise le formulaire après envoi
+                }, (error) => {
+                    console.log('FAILED...', error);
+                    alert('Erreur lors de l\'envoi de l\'e-mail. Veuillez réessayer.');
+                });
+        }
     </script>
 </body>
 
