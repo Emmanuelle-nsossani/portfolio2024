@@ -423,6 +423,8 @@ body {
     }
 
     #a-propos-gauche {
+        display: flex;
+        flex-direction: column;
         margin-top: 5vh;
         width: 50vw;
     }
@@ -560,15 +562,12 @@ body {
     }
 
     .text {
-        position: absolute;
-        top: 120px;
-        left: 120px;
+        position: relative;
         color: white;
         z-index: 10;
         opacity: 1;
         transform: translateY(-50px);
-
-        margin-bottom: 5vw;
+        margin-bottom: 5vh;
         text-transform: uppercase;
         font-size: 48px;
         font-weight: 600;
@@ -776,6 +775,11 @@ body {
         border: 3px solid var(--blanc);
     }
 
+    #message-contact {
+        font-size: 22px;
+        text-align: center;
+    }
+
     #link-contact {
         display: flex;
     }
@@ -794,6 +798,15 @@ body {
 
     .link-contact:hover {
         color: var(--rose);
+    }
+
+    #container-link-contact {
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+        justify-content: space-evenly;
     }
 }
 

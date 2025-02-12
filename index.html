@@ -3,7 +3,7 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TDWKR3HE12"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-TDWKR3HE12"></script> -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -24,7 +24,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <title>Emmanuelle Nsossani | Portfolio</title>
@@ -323,6 +323,59 @@
                                     <!-- </a> -->
                                 </div>
                             </div>
+                            <div class="slide-projet" id="pom">
+                                <img class="" src="images/captures/dataviz-square.png" alt="">
+                                <div class="container-text-projet">
+                                    <div>
+                                        <h3>#Développement</h3>
+                                    </div>
+                                    <div>
+                                        <h3>Le projet</h3>
+                                        <p>J'ai créé une dataviz avec D3.js pour afficher l'opinion des Français sur le
+                                            changement climatique. Le projet permet d'explorer des données sur les
+                                            préoccupations environnementales, les attitudes face aux politiques
+                                            écologiques
+                                            et la perception du changement climatique. Les utilisateurs peuvent
+                                            interagir
+                                            avec des graphiques et des cartes pour analyser les tendances selon l'âge,
+                                            la
+                                            région ou le niveau d'éducation. L'objectif était de rendre ces données plus
+                                            accessibles et compréhensibles.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h3>Langages</h3>
+                                        <p>HTML, CSS, JS</p>
+                                    </div>
+                                    <!-- <div>
+                                    <h3>Mon rôle</h3>
+                                    <p></p>
+                                </div> -->
+                                    <button class="button"
+                                        onclick="window.open('https://dataviz.emmanuellecode.fr/', '_blank');">
+                                        <!-- <a href="https://dataviz.emmanuellecode.fr/"> -->
+                                        <div class="original">Visiter le site</div>
+                                        <div class="letters">
+                                            <span>V</span>
+                                            <span>I</span>
+                                            <span>S</span>
+                                            <span>I</span>
+                                            <span>T</span>
+                                            <span>E</span>
+                                            <span>R</span>
+                                            <span>&nbsp;</span>
+                                            <span>L</span>
+                                            <span>E</span>
+                                            <span>&nbsp;</span>
+                                            <span>S</span>
+                                            <span>I</span>
+                                            <span>T</span>
+                                            <span>E</span>
+                                        </div>
+                                    </button>
+                                    <!-- </a> -->
+                                </div>
+                            </div>
                             <div class="slide-projet" id="life">
                                 <img class="" src="images/captures/life-square.png" alt="">
                                 <div class="container-text-projet">
@@ -407,21 +460,11 @@
                     <div id="container-flex-contact">
                         <div id="gauche-contact">
                             <img id="illustration-contact" src="images/contact.png" alt="contact">
-                            <div id="container-link-contact">
-                                <a class="link-contact" href="https://www.linkedin.com/in/ensossani/">
-                                    <p>Linkedin</p>
-                                    <img src="images/arrow-link.svg" alt="">
-                                </a>
-                                <a class="link-contact" href="mailto:emmanuelle.nsossani@outlook.com">
-                                    <p>Mail</p>
-                                    <img src="images/arrow-link.svg" alt="">
-                                </a>
-                            </div>
                         </div>
                         <div id="droite-contact">
-                            <p>N'hésitez pas à me contacter pour toutes demandes d'informations complémentaire !
+                            <p id="message-contact">N'hésitez pas à me contacter pour toutes demandes d'informations complémentaire !
                             </p>
-                            <form action="">
+                            <form id="myForm" onsubmit="sendEmail(event)">
                                 <div class="form-div">
                                     <label for="email">Entrer votre adresse mail</label>
                                     <input type="email" name="email" id="email" placeholder="recruteur@pro.fr"
@@ -429,26 +472,32 @@
                                 </div>
                                 <div class="form-div">
                                     <label for="text-form">Votre message</label>
-                                    <textarea type="text" name="text-form" id="text-form"
-                                        placeholder="Je vous veux dans mon équipe !" required></textarea>
+                                    <textarea name="message" id="text-form" placeholder="Je vous veux dans mon équipe !"
+                                        required></textarea>
                                 </div>
                                 <div class="form-div">
                                     <button class="button" type="submit">
                                         <div class="original">Envoyer !</div>
                                         <div class="letters">
-                                            <span>E</span>
-                                            <span>N</span>
-                                            <span>V</span>
-                                            <span>O</span>
-                                            <span>Y</span>
-                                            <span>E</span>
-                                            <span>R</span>
-                                            <span>&nbsp;</span>
-                                            <span>!</span>
+                                            <span>E</span><span>N</span><span>V</span><span>O</span><span>Y</span><span>E</span><span>R</span><span>&nbsp;</span><span>!</span>
                                         </div>
                                     </button>
                                 </div>
                             </form>
+                            <div id="container-link-contact">
+                                <a class="link-contact" href="https://www.linkedin.com/in/ensossani/">
+                                    <p>Linkedin</p>
+                                    <img src="images/arrow-link.svg" alt="">
+                                </a>
+                                <a class="link-contact" href="https://github.com/Emmanuelle-nsossani">
+                                    <p>Github</p>
+                                    <img src="images/arrow-link.svg" alt="">
+                                </a>
+                                <a class="link-contact" href="mailto:emmanuelle.nsossani@outlook.com">
+                                    <p>Mail</p>
+                                    <img src="images/arrow-link.svg" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -729,6 +778,39 @@
             });
         });
 
+    </script>
+    <!-- MESSAGERIE -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        // Initialisation d'EmailJS
+        emailjs.init({
+            publicKey: 'Pz2wBUr76NIfj0GkL',
+            blockHeadless: true,
+            blockList: {
+                list: ['emmanuelle.nsossani@outlook.com'],
+                watchVariable: 'userEmail',
+            },
+            limitRate: {
+                id: 'app',
+                throttle: 10000,
+            },
+        });
+
+        // Fonction pour envoyer l'email lors de la soumission du formulaire
+        function sendEmail(event) {
+            event.preventDefault(); // Empêche le rechargement de la page
+
+            emailjs.sendForm('service_3r2ufq3', 'template_pwsv5nv', '#myForm')
+                .then((response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('E-mail envoyé avec succès !');
+                    document.getElementById('myForm').reset(); // Réinitialise le formulaire après envoi
+                }, (error) => {
+                    console.log('FAILED...', error);
+                    alert('Erreur lors de l\'envoi de l\'e-mail. Veuillez réessayer.');
+                });
+        }
     </script>
 </body>
 
