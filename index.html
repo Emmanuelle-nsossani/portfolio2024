@@ -739,7 +739,7 @@
             <p id="message-contact">N'hésitez pas à me contacter pour toutes demandes d'informations
                 complémentaire !
             </p>
-            <form id="myForm" onsubmit="sendEmail(event)">
+            <form id="myFormMobile" onsubmit="sendEmailMobile(event)">
                 <div class="form-div">
                     <label for="email">Entrer votre adresse mail</label>
                     <input type="email" name="email" id="email" placeholder="recruteur@pro.fr" required />
@@ -838,6 +838,20 @@
                     console.log('SUCCESS!', response.status, response.text);
                     alert('E-mail envoyé avec succès !');
                     document.getElementById('myForm').reset(); // Réinitialise le formulaire après envoi
+                }, (error) => {
+                    console.log('FAILED...', error);
+                    alert('Erreur lors de l\'envoi de l\'e-mail. Veuillez réessayer.');
+                });
+        }
+
+        function sendEmailMobile(event) {
+            event.preventDefault(); // Empêche le rechargement de la page
+
+            emailjs.sendForm('service_3r2ufq3', 'template_pwsv5nv', '#myFormMobile')
+                .then((response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('E-mail envoyé avec succès !');
+                    document.getElementById('myFormMobile').reset(); // Réinitialise le formulaire après envoi
                 }, (error) => {
                     console.log('FAILED...', error);
                     alert('Erreur lors de l\'envoi de l\'e-mail. Veuillez réessayer.');
