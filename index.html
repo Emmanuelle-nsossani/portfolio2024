@@ -511,23 +511,21 @@
 
     </div>
     <div id="mobile">
-        <header>
-            <ul id="menu" class="hidden">
-                <li class="items-menu"><a href="#a-propos">à propos</a></li>
-                <li class="items-menu"><a href="#projet">projets</a></li>
-                <li class="items-menu"><a href="#contact">Me contacter</a></li>
+        <header id="header-mobile">
+            <ul id="menu-mobile" class="hidden">
+                <li class="items-menu"><a href="#">home</a></li>
+                <li class="items-menu"><a href="#a-propos-mobile">à propos</a></li>
+                <li class="items-menu"><a href="#projets-mobile">projets</a></li>
+                <li class="items-menu"><a href="#contact-mobile">Contact</a></li>
             </ul>
-            <div class="header-slide">
-                <a id="home-link" href="#home"><img src="images/bouton-daccueil-pour-linterface.png" alt=""></a>
-                <div id="menu-icon">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+
+            <div id="menu-icon-mobile">
+                <div></div>
+                <div></div>
                 <div></div>
             </div>
         </header>
-        <div id="overlay" class="hidden"></div>
+        <div id="overlay-mobile" class="hidden"></div>
         <section id="home">
             <h1>Emmanuelle NSOSSANI</h1>
             <p id="dev">Développeuse web</p>
@@ -539,7 +537,7 @@
                 l’IUT de Bobigny, parcours Développement Web et Dispositifs Interactifs, je suis à la
                 recherche
                 d’un stage en front-end ou back-end de 3 mois à partir du 7 avril.</p>
-            <button class="button" onclick="window.location.href = '#contact';">
+            <button class="button" onclick="window.location.href = '#contact-mobile';">
                 <div class="original">Me contacter</div>
                 <div class="letters">
                     <span>M</span>
@@ -559,7 +557,7 @@
         </section>
         <section id="a-propos">
             <div id="descr-a-propos">
-                <h2>à propos</h2>
+                <h2 id="a-propos-mobile">à propos</h2>
                 <div id="photo-a-propos"></div>
                 <p id="p-a-propos">Mes années de formation m'ont permis de développer des compétences en
                     développement web avec les langages PHP, HTML, CSS et JavaScript. Ces langages me permettent
@@ -720,7 +718,7 @@
 
         </section>
         <section id="projets">
-            <h3>Projets récents</h3>
+            <h2 id="projets-mobile">Projets</h2>
             <div id="container-projets">
                 <div class="projet" style="background-image: url('images/captures/pom-mobile.png');">
                     <a rel="noopener" target="_blank" href="https://peaceofmind.emmanuellecode.fr/">
@@ -735,7 +733,7 @@
             </div>
         </section>
         <section id="contact">
-            <h2>contact</h2>
+            <h2 id="contact-mobile">contact</h2>
             <p id="message-contact">N'hésitez pas à me contacter pour toutes demandes d'informations
                 complémentaire !
             </p>
@@ -759,17 +757,17 @@
                 </div>
             </form>
             <div id="container-link-contact">
-                <a class="link-contact" href="https://www.linkedin.com/in/ensossani/">
+                <a rel="noopener" target="_blank" class="link-contact" href="https://www.linkedin.com/in/ensossani/">
                     <p>Linkedin</p>
-                    <img src="images/arrow-link.svg" alt="">
+                    <img src="images/arrow-link.svg" alt="fleche">
                 </a>
-                <a class="link-contact" href="https://github.com/Emmanuelle-nsossani">
+                <a rel="noopener" target="_blank" class="link-contact" href="https://github.com/Emmanuelle-nsossani">
                     <p>Github</p>
-                    <img src="images/arrow-link.svg" alt="">
+                    <img src="images/arrow-link.svg" alt="fleche">
                 </a>
-                <a class="link-contact" href="mailto:emmanuelle.nsossani@outlook.com">
+                <a rel="noopener" target="_blank" class="link-contact" href="mailto:emmanuelle.nsossani@outlook.com">
                     <p>Mail</p>
-                    <img src="images/arrow-link.svg" alt="">
+                    <img src="images/arrow-link.svg" alt="fleche">
                 </a>
             </div>
         </section>
@@ -781,6 +779,7 @@
     </section>
     <script type="module" src="js/projets.js"></script>
     <script type="module" src="js/header.js"></script>
+    <script type="module" src="js/header-mobile.js"></script>
     <script type="module" src="js/loading.js"></script>
     <script>
         function downloadCV() {

@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // VERSION DESKTOP
     const menuIcon = document.getElementById("menu-icon");
     const menu = document.getElementById("menu");
     const overlay = document.getElementById("overlay");
@@ -33,5 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
         menu.classList.remove("visible");
         overlay.classList.add("hidden");
         overlay.classList.remove("visible-overlay");
-    });
+    });    
+
 });

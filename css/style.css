@@ -856,6 +856,7 @@ body {
     }
 
     h2 {
+        margin-bottom: 5vw;
         font-size: 50px;
         text-transform: uppercase;
         text-align: center;
@@ -881,18 +882,71 @@ body {
     }
 
     header {
-        width: 50px;
-        height: 50px;
+        bottom: 2vh;
+        left: 5vw;
         position: fixed;
         display: flex;
+        width: 50px;
+        height: 50px;
+
         align-items: center;
         justify-content: center;
         z-index: 100;
-        bottom: 20px;
-        left: 20px;
         border: 1px solid #D9D9D9;
         background-color: white;
         border-radius: 40px;
+    }
+
+    .header-open {
+        width: 90vw;
+        height: 35vh;
+        border: 1px solid #b2b2b2;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    header ul a {
+        color: var(--noir);
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-bottom: 3vw;
+        font-size: 40px;
+        font-weight: 600;
+        transition: 0.3s ease-in;
+    }
+
+    header ul a:hover {
+        transition: 0.3s ease-in;
+        text-decoration: line-through;
+    }
+
+    #overlay-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Couleur sombre avec transparence */
+        z-index: 99;
+        /* Sous le menu mais au-dessus du contenu */
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+
+    /* Calque visible */
+    #overlay-mobile.visible-overlay {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
     }
 
     .hidden {
@@ -913,17 +967,29 @@ body {
         display: none;
     }
 
-    #menu-icon {
+    #menu-icon-mobile {
         display: flex;
         gap: 5px;
     }
 
-    #menu-icon div {
+    
+    .header-open #menu-icon-mobile {
+        /* visible */
+        position: absolute;
+        top: 3vh;
+        left: 5vw;
+    }
+
+    #menu-icon-mobile div {
         margin: 5px 0;
         width: 7px;
         height: 7px;
         background-color: black;
         border-radius: 100%;
+    }
+
+    .visible { /*menu-mobile*/
+
     }
 
     #dev {
@@ -956,10 +1022,6 @@ body {
 
     #a-propos {
         margin: 30px 0;
-    }
-
-    #a-propos h2 {
-        margin-bottom: 20px;
     }
 
     #a-propos button {
@@ -1119,8 +1181,7 @@ body {
         color: var(--blanc);
     }
 
-    form .button {
-    }
+    form .button {}
 
     form .button .original {
         border: 3px solid var(--blanc);
@@ -1158,5 +1219,7 @@ body {
         align-items: flex-end;
         gap: 10px;
         justify-content: space-evenly;
-    } */
+    }
+
+    */
 }
