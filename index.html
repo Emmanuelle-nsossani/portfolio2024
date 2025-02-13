@@ -462,7 +462,8 @@
                             <img id="illustration-contact" src="images/contact.png" alt="contact">
                         </div>
                         <div id="droite-contact">
-                            <p id="message-contact">N'hésitez pas à me contacter pour toutes demandes d'informations complémentaire !
+                            <p id="message-contact">N'hésitez pas à me contacter pour toutes demandes d'informations
+                                complémentaire !
                             </p>
                             <form id="myForm" onsubmit="sendEmail(event)">
                                 <div class="form-div">
@@ -719,27 +720,58 @@
 
         </section>
         <section id="projets">
-            <h3>Mes projets</h3>
+            <h3>Projets récents</h3>
             <div id="container-projets">
-                <div class="projet" style="background-image: url('images/captures/dataviz.png');">
-                    <a href="">
-                        <h4>Dataviz</h4>
+                <div class="projet" style="background-image: url('images/captures/pom-mobile.png');">
+                    <a rel="noopener" target="_blank" href="https://peaceofmind.emmanuellecode.fr/">
+                        <h4>Peace Of Mind</h4>
                     </a>
                 </div>
                 <div class="projet" style="background-image: url('images/captures/life-square.png');">
-                    <a href="">
-                        <h4>Life</h4>
-                    </a>
-                </div>
-                <div class="projet">
-                    <a href="">
-                        <h4>Lorem</h4>
+                    <a rel="noopener" target="_blank" href="https://life.emmanuellecode.fr/">
+                        <h4>LIFE</h4>
                     </a>
                 </div>
             </div>
         </section>
         <section id="contact">
-
+            <h2>contact</h2>
+            <p id="message-contact">N'hésitez pas à me contacter pour toutes demandes d'informations
+                complémentaire !
+            </p>
+            <form id="myForm" onsubmit="sendEmail(event)">
+                <div class="form-div">
+                    <label for="email">Entrer votre adresse mail</label>
+                    <input type="email" name="email" id="email" placeholder="recruteur@pro.fr" required />
+                </div>
+                <div class="form-div">
+                    <label for="text-form">Votre message</label>
+                    <textarea name="message" id="text-form" placeholder="Je vous veux dans mon équipe !"
+                        required></textarea>
+                </div>
+                <div class="form-div">
+                    <button class="button" type="submit">
+                        <div class="original">Envoyer !</div>
+                        <div class="letters">
+                            <span>E</span><span>N</span><span>V</span><span>O</span><span>Y</span><span>E</span><span>R</span><span>&nbsp;</span><span>!</span>
+                        </div>
+                    </button>
+                </div>
+            </form>
+            <div id="container-link-contact">
+                <a class="link-contact" href="https://www.linkedin.com/in/ensossani/">
+                    <p>Linkedin</p>
+                    <img src="images/arrow-link.svg" alt="">
+                </a>
+                <a class="link-contact" href="https://github.com/Emmanuelle-nsossani">
+                    <p>Github</p>
+                    <img src="images/arrow-link.svg" alt="">
+                </a>
+                <a class="link-contact" href="mailto:emmanuelle.nsossani@outlook.com">
+                    <p>Mail</p>
+                    <img src="images/arrow-link.svg" alt="">
+                </a>
+            </div>
         </section>
     </div>
 
